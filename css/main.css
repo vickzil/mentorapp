@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css?family=Rakkas|Kumar+One|Akronim|Sail|Kotta+One|Yeseva+One|Questrial|Vollkorn|Titillium+Web|Roboto+Condensed|Slabo+27px');
+
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-family: 'Kotta One', sans-serif;
+    font-family: 'Kotta One', sans-serif;
+    overflow-x: hidden;
+    color: #3c4b64;
+    background-color: #ebedef;
+}
+
+
+aside {
+    position: fixed;
+    top: 110px;
+    left: 5px;
+    height: 100%;
+    background: transparent;
+    z-index: 20;
+    transition: 300ms;
+
+}
+
+.burger {
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+.media.user-profile {
+    position: relative;
+}
+
+.close {
+
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 40px;
+    color: #333;
+    cursor: pointer;
+    display: none;
+    transition: 3200ms;
+}
+
+.close-aside {
+    display: block;
+}
+
+.content-page {
+    margin-left: 22%;
+    width: 98%;
+    padding-right: 15px;
+    padding-bottom: 30px;
+}
+
+#navigation {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+    color: rgba(0, 0, 21, .5);
+    background: #fff;
+    border: 0;
+    box-shadow: 0 2px 2px 0 rgba(60, 75, 100, .14), 0 3px 1px -2px rgba(60, 75, 100, .12), 0 1px 5px 0 rgba(60, 75, 100, .2);
+    -webkit-clip-path: inset(0 0 -1000px 0);
+    clip-path: inset(0 0 -1000px 0);
+}
+
+
+#navigation a {
+    color: #ffff;
+}
+
+#navigation a.navbar-brand {
+    font-weight: bold;
+}
+
+#navigation #user {
+    color: #ffff;
+    font-weight: bold;
+}
+
+#logout {
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#logout:hover {
+    color: #888;
+}
+
+button:hover {
+    cursor: pointer;
+
+}
+
+#inputbtn:hover {
+    cursor: pointer;
+}
+
+th {
+    text-align: center;
+}
+
+.hide {
+    display: none !important;
+}
+
+.list-group-item.active {
+
+    background: #17174a;
+    border-color: none;
+    border: none !important;
+
+}
+
+.file_btn {
+    display: none;
+}
+
+.alert_div {
+    position: absolute;
+    right: 10px;
+    top: 80px;
+    width: 500px;
+
+}
+
+.card.blue-bg {
+
+    background: #f4f4f4;
+    border-color: none;
+    border: none !important;
+    color: #444;
+}
+
+table {
+    background: #fff;
+}
+
+
+/*errors*/
+#ferr,
+#cerr,
+#lerr,
+#eerr,
+#docerr,
+#sperr,
+#signUserErr,
+#signPassErr {
+    margin: 6px;
+    color: red;
+}
+
+/*tab*/
+
+.list-group-item {
+    font-size: 17px !important;
+}
+
+.about-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
+}
+
+/*signin*/
+
+.signin {
+    width: 100vw !important;
+    height: 100vh !important;
+    overflow: hidden !important;
+}
+
+.signin .row {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.col-md-6.signin-box {
+    height: 100% !important;
+    padding: 0px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: #fff;
+}
+
+.col-md-6.signin-box.dws {
+    -webkit-background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)),
+    url('../images/cardback.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url('../images/cardback.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    color: #fff;
+}
+
+.col-md-6.signin-box.dws.sig {
+    -webkit-background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url('../images/heads.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url('../images/head.jpg');
+}
+
+.signin-box h4 {
+    font-size: 30px;
+    -webkit-font-family: 'Abril Fatface', serif;
+    font-family: 'Abril Fatface', serif;
+    text-align: center;
+}
+
+.signin-box.dws h2 {
+    font-size: 38px;
+    margin-bottom: 12px;
+    -webkit-font-family: 'Rakkas', sans-serif;
+    font-family: 'Rakkas', sans-serif;
+}
+
+.ruler {
+    width: 120px;
+    height: 1px;
+    display: block;
+    margin: 60px 0px 40px;
+    background: #dc3545;
+}
+
+.signin-box .fa-user,
+.signin-box .fa-lock {
+    font-size: 20px !important;
+    margin-right: 30px !important;
+    margin-top: 14px !important;
+}
+
+.signin-box label {
+    font-size: 16px;
+    -webkit-font-family: 'Kotta One', sans-serif;
+    font-family: 'Kotta One', sans-serif;
+}
+
+.signin-box input {
+    -webkit-font-family: 'Kotta One', sans-serif;
+    font-family: 'Kotta One', sans-serif;
+}
+
+.back-home {
+    margin-top: -36px;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    transition: 800ms ease;
+}
+
+
+/*footer*/
+footer {
+    background: #cc0000;
+}
+
+footer p {
+    margin-bottom: 0px !important;
+}
+
+
+@media screen and (max-width: 1150px) {
+
+    .list-group-item {
+        font-size: 17px !important;
+    }
+
+    .content-page {
+        margin-left: 25%;
+    }
+}
+
+@media screen and (max-width: 980px) {
+
+    .list-group-item {
+        font-size: 15px !important;
+    }
+
+    .content-page {
+        margin-left: 28%;
+    }
+
+    #heading {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 880px) {
+
+    .content-page {
+        margin-left: 30%;
+    }
+}
+
+@media screen and (max-width: 830px) {
+
+    .content-page {
+        margin-left: 32%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .burger {
+        display: block;
+    }
+
+    .user-name {
+        display: none;
+    }
+
+    aside {
+        position: fixed;
+        top: 0px;
+        left: -1000px;
+        height: 100%;
+        width: 100%;
+        background: #fff;
+        z-index: 10000;
+
+    }
+
+    #heading {
+        font-size: 27px;
+    }
+
+    .active-show {
+        left: 0px;
+    }
+
+    .content-page {
+        margin-left: 0%;
+    }
+
+    /*signin*/
+
+    .signin {
+        width: 100% !important;
+        height: 100% !important;
+        overflow: unset !important;
+        overflow-x: hidden !important;
+        padding: 0px !important;
+        margin: 0px !important;
+    }
+
+    .signin .row.zxc {
+        padding: 0px !important;
+        margin: 0px !important;
+        width: 100%;
+        overflow-x: hidden !important;
+    }
+
+
+    .col-md-6.signin-box {
+        height: 100% !important;
+        padding: 0px 50px;
+        margin-bottom: 60px;
+    }
+
+    .col-md-6.signin-box.dws {
+        padding-top: 30px;
+        margin-bottom: 40px;
+    }
+
+    .signin-box h4 {
+        font-size: 30px;
+    }
+
+    .signin-box.dws h2 {
+        font-size: 38px;
+        margin-bottom: 12px;
+    }
+
+    .ruler {
+        width: 120px;
+        height: 1px;
+        margin: 60px 0px 40px;
+    }
+
+    .signin-box .fa-user,
+    .signin-box .fa-lock {
+        font-size: 20px !important;
+        margin-right: 30px !important;
+        margin-top: 14px !important;
+    }
+
+    .signin-box label {
+        font-size: 16px;
+    }
+
+
+
+}
+
+
+@media screen and (max-width: 570px) {
+
+    .content-page {
+
+        padding-right: 0px;
+        padding-left: 0px;
+        margin-right: 0px;
+    }
+
+    #navigation {
+        height: 60px;
+        padding: 10px 15px;
+    }
+
+    #heading {
+        font-size: 25px;
+    }
+
+}
+
+@media screen and (max-width: 430px) {
+
+    #navigation {
+        height: 55px;
+    }
+
+    .col-md-6.signin-box {
+        height: 100% !important;
+        padding: 0px 30px;
+    }
+
+    .col-md-6.signin-box.dws {
+        padding-top: 50px;
+    }
+
+    .signin-box h4 {
+        font-size: 33px;
+        font-weight: lighter;
+    }
+
+    .signin-box.dws h2 {
+        font-size: 38px;
+        margin-bottom: 12px;
+    }
+
+
+    .ruler {
+        width: 120px;
+        height: 1px;
+        margin: 30px 0px;
+    }
+
+    .signin-box .fa-user,
+    .signin-box .fa-lock {
+        font-size: 20px !important;
+        margin-right: 30px !important;
+        margin-top: 14px !important;
+    }
+
+    .signin-box label {
+        font-size: 14px;
+    }
+
+    .signin .btn-success {
+        padding: 5px 20px !important;
+    }
+
+
+
+}
